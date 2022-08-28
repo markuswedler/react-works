@@ -1,0 +1,44 @@
+footer{
+  background: #000;
+  border-radius: 8px;
+  padding: 70px 40px;
+  justify-self: end;
+  margin-top: auto;
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      color: #fff;
+    }
+    ul.social{
+      display: flex;
+      gap: 23px;
+      li{
+        width: 16px;
+        height: 16px;
+        a{ filter: invert(1); }
+        &:nth-child(1){
+          a{ background-image: url("/images/logos/github.svg"); }
+        }
+        &:nth-child(2){
+          a{ background-image: url("/images/logos/devto.svg"); }
+        }
+        &:nth-child(3){
+          a{ background-image: url("/images/logos/yt.svg"); }
+        }
+        &:nth-child(4){
+          a{ background-image: url("/images/logos/twitter.svg"); }
+        }
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+// cards ratio
+$cr-w: 3; // width
+$cr-h: 2; // height
+// gap between cards' rows
+$gap-xl: 50px;
+$gap-l: 3vw;
+$gap-m: 4.5vw;
+$gap-sm: 10vw;
+
+
+
+.works-page{
+
+section{
+  padding: 50px 0;
+  h1{ margin: 0 0 12px; }
+  p{ font-weight: 500; }
+}
+
+ul.works{
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  justify-content: space-between;
+  gap: $gap-xl 0;
+  a{
+    display: block;
+    height: calc(300px/$cr-w*$cr-h);
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column;
+    div{
+      &:nth-child(1){
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(2){
+        padding: 12px 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.coming-soon{
+  text-align: center;
+  padding: $gap-xl 0;
+  font-weight: 500;
+}
+
+
+
+@media screen and (max-width: $media-l) {
+  ul.works{
+    grid-template-columns: repeat(3, 30vw);
+    gap: $gap-l 0;
+    a{
+      width: 30vw;
+      height: calc(30vw/$cr-w*$cr-h);
+    }
+  }
+  .coming-soon{
+    margin: $gap-l 0;
+  }
+}
+
+
+@media screen and (max-width: $media-m) {
+  ul.works{
+    grid-template-columns: repeat(2, 45vw);
+    gap: $gap-m 0;
+    a{
+      width: 45vw;
+      height: calc(45vw/$cr-w*$cr-h);
+    }
+  }
+  .coming-soon{
+    margin: $gap-m 0;
+  }
+}
+
+
+@media screen and (max-width: $media-sm) {
+  ul.works{
+    grid-template-columns: repeat(1, 100%);
+    gap: $gap-sm 0;
+    a{
+      width: 100%;
+      height: calc((100vw - $wrapper-padding * 2) / $cr-w * $cr-h);
+    }
+  }
+  .coming-soon{
+    margin: $gap-sm 0;
+  }
+}
+
+}

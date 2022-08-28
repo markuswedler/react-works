@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.works-page section {
+  padding: 50px 0;
+}
+.works-page section h1 {
+  margin: 0 0 12px;
+}
+.works-page section p {
+  font-weight: 500;
+}
+.works-page ul.works {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  justify-content: space-between;
+  gap: 50px 0;
+}
+.works-page ul.works a {
+  display: block;
+  height: 200px;
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column;
+}
+.works-page ul.works a div:nth-child(1) {
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.works-page ul.works a div:nth-child(2) {
+  padding: 12px 20px;
+  font-weight: 500;
+}
+.works-page .coming-soon {
+  text-align: center;
+  padding: 50px 0;
+  font-weight: 500;
+}
+@media screen and (max-width: 1320px) {
+  .works-page ul.works {
+    grid-template-columns: repeat(3, 30vw);
+    gap: 3vw 0;
+  }
+  .works-page ul.works a {
+    width: 30vw;
+    height: 20vw;
+  }
+  .works-page .coming-soon {
+    margin: 3vw 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .works-page ul.works {
+    grid-template-columns: repeat(2, 45vw);
+    gap: 4.5vw 0;
+  }
+  .works-page ul.works a {
+    width: 45vw;
+    height: 30vw;
+  }
+  .works-page .coming-soon {
+    margin: 4.5vw 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .works-page ul.works {
+    grid-template-columns: repeat(1, 100%);
+    gap: 10vw 0;
+  }
+  .works-page ul.works a {
+    width: 100%;
+    height: calc((100vw - 40px) / 3 * 2);
+  }
+  .works-page .coming-soon {
+    margin: 10vw 0;
+  }
+}
+
+footer {
+  background: #000;
+  border-radius: 8px;
+  padding: 70px 40px;
+  justify-self: end;
+  margin-top: auto;
+}
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .wrapper .logo {
+  color: #fff;
+}
+footer .wrapper ul.social {
+  display: flex;
+  gap: 23px;
+}
+footer .wrapper ul.social li {
+  width: 16px;
+  height: 16px;
+}
+footer .wrapper ul.social li a {
+  filter: invert(1);
+}
+footer .wrapper ul.social li:nth-child(1) a {
+  background-image: url("/images/logos/github.svg");
+}
+footer .wrapper ul.social li:nth-child(2) a {
+  background-image: url("/images/logos/devto.svg");
+}
+footer .wrapper ul.social li:nth-child(3) a {
+  background-image: url("/images/logos/yt.svg");
+}
+footer .wrapper ul.social li:nth-child(4) a {
+  background-image: url("/images/logos/twitter.svg");
+}
+footer .wrapper ul.social li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.js-challenges ul.works a {
+  border: 2px solid #000;
+  border-radius: 6px;
+}
+.js-challenges ul.works a:nth-child(1) div:nth-child(1) {
+  background-image: url("/images/stopwatch.svg");
+}
+.js-challenges ul.works a:nth-child(2) div:nth-child(1) {
+  background-image: url("/images/clock.svg");
+}
+.js-challenges ul.works a:nth-child(3) div:nth-child(1) {
+  background-image: url("/images/calculator.svg");
+}
+.js-challenges ul.works a div:nth-child(2) {
+  border-top: 2px solid #000;
+}
+@media screen and (max-width: 1320px) {
+  .js-challenges ul.works a {
+    border-width: 0.2vw;
+  }
+  .js-challenges ul.works a div:nth-child(2) {
+    border-width: 0.2vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .js-challenges ul.works a {
+    border-width: 0.36vw;
+  }
+  .js-challenges ul.works a div:nth-child(2) {
+    border-width: 0.36vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .js-challenges ul.works a {
+    border-width: 0.68vw;
+  }
+  .js-challenges ul.works a div:nth-child(2) {
+    border-width: 0.68vw;
+  }
+}
+
+.univprojects ul.works a:nth-child(1) div:nth-child(1) {
+  background-image: url("");
+}
+.univprojects ul.works a div:nth-child(2) {
+  background: #eee;
+}
+
+html {
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: stretch;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  padding: 0 20px 20px;
+}
+body .wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+body a {
+  text-decoration: none;
+  color: #000;
+}
+body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}/*# sourceMappingURL=globals.css.map */

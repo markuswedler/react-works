@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// components
+@import "./variables";
+@import "./works-page";
+@import "./footer";
+@import "./js-challenges/globals";
+@import "./univprojects/globals";
+
+
+
+html{
+  min-height: stretch;
+}
+
+
+
+body{
+  font-family: Roboto, sans-serif;
+  padding: 0 $wrapper-padding $wrapper-padding;
+  .wrapper{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+}
+
+
+
+.logo{
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
