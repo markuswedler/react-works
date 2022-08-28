@@ -86,8 +86,6 @@ footer {
   background: #000;
   border-radius: 8px;
   padding: 70px 40px;
-  justify-self: end;
-  margin-top: auto;
 }
 footer .wrapper {
   display: flex;
@@ -170,17 +168,8 @@ footer .wrapper ul.social li a {
   }
 }
 
-.univprojects ul.works a:nth-child(1) div:nth-child(1) {
-  background-image: url("");
-}
 .univprojects ul.works a div:nth-child(2) {
   background: #eee;
-}
-
-html {
-  min-height: -webkit-fill-available;
-  min-height: -moz-available;
-  min-height: stretch;
 }
 
 body {
