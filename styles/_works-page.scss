@@ -17,12 +17,12 @@ section{
   p{ font-weight: 500; }
 }
 
-ul.works{
+.works{
   display: grid;
   grid-template-columns: repeat(4, 300px);
   justify-content: space-between;
   gap: $gap-xl 0;
-  a{
+  .card{
     display: block;
     height: calc(300px/$cr-w*$cr-h);
     border-radius: 6px;

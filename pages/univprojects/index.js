@@ -10,7 +10,7 @@ const UnivProjects = () => {
 
       {/* Works */}
       <ul className="works">
-        <a href="">
+        <a className="card" href="">
           <div></div>
           <div>Coming soon</div>
         </a>

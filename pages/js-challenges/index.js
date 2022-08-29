@@ -10,15 +10,15 @@ const JSC = () => {
 
       {/* Works */}
       <ul className="works">
-        <a href="https://markuswedler.github.io/stopwatch/">
+        <a className="card" href="https://markuswedler.github.io/stopwatch/">
           <div></div>
           <div>Stopwatch</div>
         </a>
-        <a href="https://markuswedler.github.io/clock/">
+        <a className="card" href="https://markuswedler.github.io/clock/">
           <div></div>
           <div>Clock</div>
         </a>
-        <a href="https://markuswedler.github.io/calculator/">
+        <a className="card" href="https://markuswedler.github.io/calculator/">
           <div></div>
           <div>Calculator</div>
         </a>
