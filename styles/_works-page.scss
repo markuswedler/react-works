@@ -52,47 +52,41 @@ section{
 
 
 @media screen and (max-width: $media-l) {
-  ul.works{
+  .works{
     grid-template-columns: repeat(3, 30vw);
     gap: $gap-l 0;
-    a{
+    .card{
       width: 30vw;
       height: calc(30vw/$cr-w*$cr-h);
     }
   }
-  .coming-soon{
-    margin: $gap-l 0;
-  }
+  .coming-soon{ margin: $gap-l 0; }
 }
 
 
 @media screen and (max-width: $media-m) {
-  ul.works{
+  .works{
     grid-template-columns: repeat(2, 45vw);
     gap: $gap-m 0;
-    a{
+    .card{
       width: 45vw;
       height: calc(45vw/$cr-w*$cr-h);
     }
   }
-  .coming-soon{
-    margin: $gap-m 0;
-  }
+  .coming-soon{ margin: $gap-m 0; }
 }
 
 
 @media screen and (max-width: $media-sm) {
-  ul.works{
+  .works{
     grid-template-columns: repeat(1, 100%);
     gap: $gap-sm 0;
-    a{
+    .card{
       width: 100%;
       height: calc((100vw - $wrapper-padding * 2) / $cr-w * $cr-h);
     }
   }
-  .coming-soon{
-    margin: $gap-sm 0;
-  }
+  .coming-soon{ margin: $gap-sm 0; }
 }
 
 }

@@ -43,11 +43,11 @@
   font-weight: 500;
 }
 @media screen and (max-width: 1320px) {
-  .works-page ul.works {
+  .works-page .works {
     grid-template-columns: repeat(3, 30vw);
     gap: 3vw 0;
   }
-  .works-page ul.works a {
+  .works-page .works .card {
     width: 30vw;
     height: 20vw;
   }
@@ -56,11 +56,11 @@
   }
 }
 @media screen and (max-width: 900px) {
-  .works-page ul.works {
+  .works-page .works {
     grid-template-columns: repeat(2, 45vw);
     gap: 4.5vw 0;
   }
-  .works-page ul.works a {
+  .works-page .works .card {
     width: 45vw;
     height: 30vw;
   }
@@ -69,11 +69,11 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .works-page ul.works {
+  .works-page .works {
     grid-template-columns: repeat(1, 100%);
     gap: 10vw 0;
   }
-  .works-page ul.works a {
+  .works-page .works .card {
     width: 100%;
     height: calc((100vw - 40px) / 3 * 2);
   }
