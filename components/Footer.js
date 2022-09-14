@@ -1,8 +1,10 @@
+import Link from "next/link"
+
 const Footer = () => {
   return (
-    <footer>
-      <div className="wrapper">
-        <a className="logo" href="https://markuswedler.github.io/">Markus Wedler</a>
+    <footer className="wrapper">
+      <div className="cont">
+        <Link href="/"><a className="logo"></a></Link>
         <ul className="social">
           <li><a href="https://github.com/markuswedler"></a></li>
           <li><a href="https://dev.to/markuswedler"></a></li>

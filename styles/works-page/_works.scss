@@ -1,0 +1,54 @@
+ul.works{
+  a{
+    outline: 2px solid #000;
+    border-radius: 6px;
+    div{
+      &:nth-child(2){
+        border-top: 2px solid #000;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: $media-l) {
+  ul.works{
+    a{
+      border-width: .2vw;
+      div{
+        &:nth-child(2){
+          border-width: .2vw;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $media-m) {
+  ul.works{
+    a{
+      border-width: .36vw;
+      div{
+        &:nth-child(2){
+          border-width: .36vw;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $media-sm) {
+  ul.works{
+    a{
+      border-width: .68vw;
+      div{
+        &:nth-child(2){
+          border-width: .68vw;
+        }
+      }
+    }
+  }
+}

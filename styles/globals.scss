@@ -10,24 +10,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 // components
 @import "./variables";
-@import "./works-page";
+@import "./wrapper";
+@import "./header";
 @import "./footer";
-@import "./js-challenges/globals";
-@import "./univprojects/globals";
+@import "./main";
+@import "./works-page/works-page";
+@import "./works-page/works";
+@import "./js-challenges/main";
+@import "./univprojects/main";
+
+
+
+*{
+  color: $text;
+}
 
 
 
 body{
   font-family: Roboto, sans-serif;
-  padding: 0 $wrapper-padding $wrapper-padding;
-  .wrapper{
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-  }
   a{
     text-decoration: none;
-    color: #000;
   }
   ul{
     list-style: none;
@@ -41,4 +44,7 @@ body{
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 600;
+  &::before{
+    content: 'Markus Wedler';
+  }
 }

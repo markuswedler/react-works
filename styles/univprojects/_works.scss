@@ -1,9 +1,10 @@
 ul.works{
   a{
-    // &:nth-child(1){ div{ &:nth-child(1){ background-image: url(""); } } }
+    &:nth-child(1){ div{ &:nth-child(1){ background-image: url("/images/univprojects/amv-theatres.png"); } } }
     div{
-      &:nth-child(2){
-        background: #eee;
+      &:nth-child(1){
+        background-size: cover !important;
+        background-position: top !important;
       }
     }
   }

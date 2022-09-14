@@ -5,14 +5,14 @@ const UnivProjects = () => {
       {/* About */}
       <section>
         <h1>University Projects</h1>
-        <p>Here are some university projects&nbsp;I've made while studying in university</p>
+        <p>Here are some university projects&nbsp;I've made while studying in the university</p>
       </section>
 
       {/* Works */}
       <ul className="works">
-        <a className="card" href="">
+        <a className="card" href="https://amvtheatres.vercel.app/">
           <div></div>
-          <div>Coming soon</div>
+          <div>AMV Theatres</div>
         </a>
       </ul>
 

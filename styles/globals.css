@@ -5,8 +5,99 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media all and (max-width: 425px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  gap: 1em;
+}
+header nav a {
+  transition: 0.15s;
+  padding: 0.5em 1em;
+  border-radius: 0.375em;
+}
+header nav a:hover {
+  background: #F3F4F6;
+}
+
+footer {
+  background: transparent;
+}
+footer .cont {
+  background: #000;
+  border-radius: 8px;
+  padding: 70px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .cont .logo {
+  color: #fff;
+}
+footer .cont ul.social {
+  display: flex;
+  gap: 23px;
+}
+footer .cont ul.social li {
+  width: 16px;
+  height: 16px;
+}
+footer .cont ul.social li a {
+  filter: invert(1);
+}
+footer .cont ul.social li:nth-child(1) a {
+  background-image: url("/images/logos/github.svg");
+}
+footer .cont ul.social li:nth-child(2) a {
+  background-image: url("/images/logos/devto.svg");
+}
+footer .cont ul.social li:nth-child(3) a {
+  background-image: url("/images/logos/yt.svg");
+}
+footer .cont ul.social li:nth-child(4) a {
+  background-image: url("/images/logos/twitter.svg");
+}
+footer .cont ul.social li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main div {
+  display: block;
+  padding: 1rem 0 0;
+}
+main div:last-child {
+  padding-bottom: 1rem;
+}
+
 .works-page section {
-  padding: 50px 0;
+  padding: 1em 0 2em;
 }
 .works-page section h1 {
   margin: 0 0 12px;
@@ -75,115 +166,72 @@
   }
   .works-page .works .card {
     width: 100%;
-    height: calc((100vw - 40px) / 3 * 2);
+    height: calc((100vw - 60px) / 3 * 2);
   }
   .works-page .coming-soon {
     margin: 10vw 0;
   }
 }
 
-footer {
-  background: #000;
-  border-radius: 8px;
-  padding: 70px 40px;
-}
-footer .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-footer .wrapper .logo {
-  color: #fff;
-}
-footer .wrapper ul.social {
-  display: flex;
-  gap: 23px;
-}
-footer .wrapper ul.social li {
-  width: 16px;
-  height: 16px;
-}
-footer .wrapper ul.social li a {
-  filter: invert(1);
-}
-footer .wrapper ul.social li:nth-child(1) a {
-  background-image: url("/images/logos/github.svg");
-}
-footer .wrapper ul.social li:nth-child(2) a {
-  background-image: url("/images/logos/devto.svg");
-}
-footer .wrapper ul.social li:nth-child(3) a {
-  background-image: url("/images/logos/yt.svg");
-}
-footer .wrapper ul.social li:nth-child(4) a {
-  background-image: url("/images/logos/twitter.svg");
-}
-footer .wrapper ul.social li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.js-challenges ul.works a {
-  border: 2px solid #000;
+ul.works a {
+  outline: 2px solid #000;
   border-radius: 6px;
 }
-.js-challenges ul.works a:nth-child(1) div:nth-child(1) {
-  background-image: url("/images/stopwatch.svg");
-}
-.js-challenges ul.works a:nth-child(2) div:nth-child(1) {
-  background-image: url("/images/clock.svg");
-}
-.js-challenges ul.works a:nth-child(3) div:nth-child(1) {
-  background-image: url("/images/calculator.svg");
-}
-.js-challenges ul.works a div:nth-child(2) {
+ul.works a div:nth-child(2) {
   border-top: 2px solid #000;
 }
+
 @media screen and (max-width: 1320px) {
-  .js-challenges ul.works a {
+  ul.works a {
     border-width: 0.2vw;
   }
-  .js-challenges ul.works a div:nth-child(2) {
+  ul.works a div:nth-child(2) {
     border-width: 0.2vw;
   }
 }
 @media screen and (max-width: 900px) {
-  .js-challenges ul.works a {
+  ul.works a {
     border-width: 0.36vw;
   }
-  .js-challenges ul.works a div:nth-child(2) {
+  ul.works a div:nth-child(2) {
     border-width: 0.36vw;
   }
 }
 @media screen and (max-width: 600px) {
-  .js-challenges ul.works a {
+  ul.works a {
     border-width: 0.68vw;
   }
-  .js-challenges ul.works a div:nth-child(2) {
+  ul.works a div:nth-child(2) {
     border-width: 0.68vw;
   }
 }
+.js-challenges ul.works a:nth-child(1) div:nth-child(1) {
+  background-image: url("/images/js-challenges/stopwatch.svg");
+}
+.js-challenges ul.works a:nth-child(2) div:nth-child(1) {
+  background-image: url("/images/js-challenges/clock.svg");
+}
+.js-challenges ul.works a:nth-child(3) div:nth-child(1) {
+  background-image: url("/images/js-challenges/calculator.svg");
+}
 
-.univprojects ul.works a div:nth-child(2) {
-  background: #eee;
+.univprojects ul.works a:nth-child(1) div:nth-child(1) {
+  background-image: url("/images/univprojects/amv-theatres.png");
+}
+.univprojects ul.works a div:nth-child(1) {
+  background-size: cover !important;
+  background-position: top !important;
+}
+
+* {
+  color: #374151;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  padding: 0 20px 20px;
-}
-body .wrapper {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
 }
 body a {
   text-decoration: none;
-  color: #000;
 }
 body ul {
   list-style: none;
@@ -194,4 +242,7 @@ body ul {
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 600;
+}
+.logo::before {
+  content: "Markus Wedler";
 }/*# sourceMappingURL=globals.css.map */

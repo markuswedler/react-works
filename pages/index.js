@@ -2,9 +2,9 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div>
-      <div><Link href="/js-challenges">js-challenges</Link></div>
-      <div><Link href="/univprojects">univprojects</Link></div>
-    </div>
+    <main className="wrapper">
+      <div><Link href="/js-challenges"><a>js-challenges</a></Link></div>
+      <div><Link href="/univprojects"><a>univprojects</a></Link></div>
+    </main>
   )
 }
