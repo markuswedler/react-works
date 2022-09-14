@@ -5,7 +5,7 @@ const UnivProjects = () => {
       {/* About */}
       <section>
         <h1>University Projects</h1>
-        <p>Here are some university projects I've made while studying in the university</p>
+        <p>Here are some university projects I&apos;ve made while studying in the&apos;university</p>
       </section>
 
       {/* Works */}

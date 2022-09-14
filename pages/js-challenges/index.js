@@ -5,7 +5,7 @@ const JSC = () => {
       {/* About */}
       <section>
         <h1>JS Challenges</h1>
-        <p>Here are some JS challenges I once saw on Instagram and coded</p>
+        <p>Here are some JS challenges I once saw on Instagram and&apos;coded</p>
       </section>
 
       {/* Works */}
