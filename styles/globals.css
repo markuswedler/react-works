@@ -1,12 +1,124 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
+.cards-cont {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.cards-cont .card {
+  height: 33vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 15px;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+@media all and (hover: none) {
+  .cards-cont .card {
+    height: auto !important;
+  }
+}
+@media all and (min-width: 1170px) {
+  .cards-cont .card {
+    height: 386.1px;
+  }
+}
+.cards-cont .card:hover .container {
+  opacity: 1;
+}
+.cards-cont .card .container {
+  background: #fff;
+  transition: 0.15s;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  padding: 30px 35px;
+  letter-spacing: 0.2px;
+}
+@media all and (hover) {
+  .cards-cont .card .container {
+    opacity: 0;
+    height: 100%;
+  }
+}
+.cards-cont .card .container .arrow {
+  margin: 0 0 auto auto;
+  padding-top: 8px;
+}
+@media all and (hover: none) {
+  .cards-cont .card .container .arrow {
+    margin-bottom: -4px;
+  }
+}
+.cards-cont .card .container .arrow div {
+  position: relative;
+}
+.cards-cont .card .container .arrow div::after, .cards-cont .card .container .arrow div::before {
+  content: "";
+  top: 0;
+  right: 0;
+}
+.cards-cont .card .container .arrow div::after {
+  height: 4px;
+  width: 21px;
+}
+@media all and (hover: none) {
+  .cards-cont .card .container .arrow div::after {
+    height: 3px;
+    width: 15.75px;
+  }
+}
+.cards-cont .card .container .arrow div::before {
+  width: 4px;
+  height: 21px;
+}
+@media all and (hover: none) {
+  .cards-cont .card .container .arrow div::before {
+    width: 3px;
+    height: 15.75px;
+  }
+}
+.cards-cont .card .container .arrow div span {
+  top: -1px;
+  right: 1px;
+  height: 4px;
+  width: 28px;
+  transform: rotate(-45deg);
+  transform-origin: 100% 50%;
+}
+@media all and (hover: none) {
+  .cards-cont .card .container .arrow div span {
+    height: 3px;
+    width: 21px;
+  }
+}
+.cards-cont .card .container .arrow div::after, .cards-cont .card .container .arrow div::before, .cards-cont .card .container .arrow div span {
+  position: absolute;
+  background: #000;
+  border-radius: 100vmax;
+}
+.cards-cont .card .container .content span {
+  margin-bottom: 0.3125em;
+  color: #757575;
+  line-height: 1.75;
+}
+.cards-cont .card .container .content h3 {
+  font-size: 1.25em;
+  line-height: 1.4;
+  color: #000;
+  background-image: url();
+}
+
 .wrapper {
-  max-width: 1440px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
@@ -86,14 +198,6 @@ footer .cont ul.social li a {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-main div {
-  display: block;
-  padding: 1rem 0 0;
-}
-main div:last-child {
-  padding-bottom: 1rem;
 }
 
 .works-page section {
@@ -228,7 +332,7 @@ ul.works a div:nth-child(2) {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 body a {
   text-decoration: none;
